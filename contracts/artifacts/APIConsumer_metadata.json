@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.13+commit.abaa5c0e"
+		"version": "0.8.19+commit.7dd6d404"
 	},
 	"language": "Solidity",
 	"output": {
@@ -331,7 +331,7 @@
 		"compilationTarget": {
 			"contracts/ChainlinkConsumer.sol": "APIConsumer"
 		},
-		"evmVersion": "london",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -456,11 +456,11 @@
 			]
 		},
 		"contracts/ChainlinkConsumer.sol": {
-			"keccak256": "0x433e1653477e46c3962818a101b4365cb1b4d20f33147fb264a3c97a4bd358f6",
+			"keccak256": "0x7f1b7a981be5e1681393fb64aff617457553229dddd9e01b7e0ebb205847cc50",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://65a733e8a323332e32bcf7bac389b8092e241a94a64cb65fccf2efdd102b4d12",
-				"dweb:/ipfs/QmZicuJDL3hhif43TCgMrwG5K3UrgT98Uxj7UdW77GRf2N"
+				"bzz-raw://f46162644661f5e5eccfe97bea5257911e765c20e2c38ce8b70b3bc7d04a5014",
+				"dweb:/ipfs/QmSGfUCqqrf8vCRnpgZZpkGoeFJERRmbX8tjV9cUWj7jyU"
 			]
 		}
 	},

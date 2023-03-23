@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.13+commit.abaa5c0e"
+		"version": "0.8.19+commit.7dd6d404"
 	},
 	"language": "Solidity",
 	"output": {
@@ -835,6 +835,20 @@
 		],
 		"devdoc": {
 			"custom:security-contact": "marcelofrayha@gmail.com",
+			"events": {
+				"ApprovalForAll(address,address,bool)": {
+					"details": "Emitted when `account` grants or revokes permission to `operator` to transfer their tokens, according to `approved`."
+				},
+				"TransferBatch(address,address,address,uint256[],uint256[])": {
+					"details": "Equivalent to multiple {TransferSingle} events, where `operator`, `from` and `to` are the same for all transfers."
+				},
+				"TransferSingle(address,address,address,uint256,uint256)": {
+					"details": "Emitted when `value` tokens of token type `id` are transferred from `from` to `to` by `operator`."
+				},
+				"URI(string,uint256)": {
+					"details": "Emitted when the URI for token type `id` changes to `value`, if it is a non-programmatic URI. If an {URI} event was emitted for `id`, the standard https://eips.ethereum.org/EIPS/eip-1155#metadata-extensions[guarantees] that `value` will equal the value returned by {IERC1155MetadataURI-uri}."
+				}
+			},
 			"kind": "dev",
 			"methods": {
 				"balanceOf(address,uint256)": {
@@ -899,7 +913,7 @@
 		"compilationTarget": {
 			"contracts/SweepStocks.sol": "SweepStocks"
 		},
-		"evmVersion": "london",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
