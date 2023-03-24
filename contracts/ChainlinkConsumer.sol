@@ -29,10 +29,14 @@ contract APIConsumer is ChainlinkClient, ConfirmedOwner {
         string memory endpoint = "/standings"; 
         league = _league;
         URL = baseURL.concat(league).concat(endpoint);
-        setChainlinkOracle(0x7ca7215c6B8013f249A195cc107F97c4e623e5F5); //Polygon Oracle run by OracleSpace Labs
+        setChainlinkOracle(0x367dF9909DD35Cc24De19ae56E7674Ad06af39aA); //Optimism Goerli Oracle run by OracleSpace Labs
+        // setChainlinkOracle(0x7ca7215c6B8013f249A195cc107F97c4e623e5F5); //Polygon Oracle run by OracleSpace Labs
         // setChainlinkOracle(0xC29bC7fc567966b84E54093e6AfF0476d5684d3e); //Polygon oracle (my own)
+
         // setChainlinkToken(0xE2e73A1c69ecF83F464EFCE6A5be353a37cA09b2); //Goerli LINK Token
-        setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB); //Polygon LINK Token
+        setChainlinkToken(0xdc2CC710e42857672E7907CF474a69B63B93089f); //Optimism Goerli LINK Token
+        // setChainlinkToken(0x326C977E6efc84E512bB9C30f76E30c160eD06FB); //Polygon LINK Token
+        
         //jobId = "3d2529ce26a74c9d9e593750d94950c9"; //single response job
         jobId = "cd3a5f8dcac245e9a3ff58d59b445595"; //multi response job
         fee = (1 * LINK_DIVISIBILITY) / 10; // 0.1 * 10**18
